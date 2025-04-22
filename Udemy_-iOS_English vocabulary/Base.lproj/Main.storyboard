@@ -37,12 +37,20 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="np0-Pr-9nX">
+                                <rect key="frame" x="307" y="787.66666666666663" width="56" height="34.333333333333371"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="次へ"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9aa-ui-Mdj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CYf-cM-gOO"/>
                             <constraint firstItem="9aa-ui-Mdj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OYG-U0-mVM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="np0-Pr-9nX" secondAttribute="trailing" constant="30" id="Orx-5g-XgW"/>
+                            <constraint firstAttribute="bottom" secondItem="np0-Pr-9nX" secondAttribute="bottom" constant="30" id="h8I-9y-Xdw"/>
                         </constraints>
                     </view>
                     <connections>
@@ -57,6 +65,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
