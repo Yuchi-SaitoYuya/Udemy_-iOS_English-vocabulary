@@ -20,14 +20,25 @@ class ViewController: UIViewController {
         ["shop", "店"]
     ]
 
+    var currentIndex = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        wordLabel.text = words[0][0]
+        dispEnglishWord()
     }
 
     @IBAction func showAnswer(_ sender: Any) {
-        wordLabel.text = words[0][1]
+        wordLabel.text = words[currentIndex][1]
+    }
+    
+    @IBAction func showNext(_ sender: Any) {
+        currentIndex += 1
+        dispEnglishWord()
+    }
+
+    func dispEnglishWord() {
+        wordLabel.text = words[currentIndex][0]
     }
 }
 
